@@ -158,4 +158,11 @@ const PageOne = () => {
   );
 }
 ```
+## Github issues
+### 
+
+## Application of the system
+In order to demonstrate how to use React Native, I have upload a demo to show how React Native work.  
+Below is picture showing how React Native works.
+
 
