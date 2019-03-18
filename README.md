@@ -165,4 +165,4 @@ const PageOne = () => {
 In order to demonstrate how to use React Native, I have upload a demo to show how React Native work.  
 Below is picture showing how React Native works.  
 
-<img align = center src = "https://github.com/ec500-software-engineering/case-study-xhyzzZ/blob/master/Demo.jpg" height="600" width="350">
+<div align = center><img src = "https://github.com/ec500-software-engineering/case-study-xhyzzZ/blob/master/Demo.jpg" height="600" width="350"></div>
