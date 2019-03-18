@@ -134,5 +134,28 @@ The next time you run the tests, the rendered output will be compared to the pre
 ### CI 
 When we use React Native, in some way, it’s hard for us to do some CI in project, but right now we have two platforms that we can do CI for React Native.  
 
-**Visual Studio App Center**: 
-App Center is a platform that allows you to continuously build, test, release, and monitor apps. It supports GitHub, Bitbucket, and Visual Studio Team Services. That means you can connect your code repo to any of these services. So every time you push some changes to a specific branch, it will automatically build your app.
+**Visual Studio App Center:**    
+App Center is a platform that allows you to continuously build, test, release, and monitor apps. It supports GitHub, Bitbucket, and Visual Studio Team Services. That means you can connect your code repo to any of these services. So every time you push some changes to a specific branch, it will automatically build your app.  
+
+**Bitrise:**   
+Bitrise is a continous integration and delivery platform. Its main focus is on mobile app development. The main power of Bitrise comes from its 180+ integrations. Any tool or service that you’re already using for the continuous integration and delivery of your app is supported. Well, maybe not all, but in those 180+ integrations, there’s bound to be a handful of those that support what you need to accomplish.  
+
+We are going to test computing platform in Android and iOS to make sure that the React Native code runs well in both of the computing platform.  
+## Software Architecture
+In React Native, application is divided into component, if you want to add functionality, you must create component, React Native provides a number of built-in components like basic components -- View, Text, Image, TextInput, etc. Every time you want to add/edit functionality, it’s based on component.  
+
+React Native project is not alone. Every project can form into a API, and then can be called in another React Native project, just need to import it from where it used to be. It’s very easy for us to integrate some small projects into a big project.  
+
+In React Native, there are many asynchronous parts. For example, for the networking, Many mobile apps need to load resources from a remote URL. You may want to make a POST request to a REST API, or you may simply need to fetch a chunk of static content from another server. In order to do these, you can use Fetch API, which can be asynchronous. **Async/Await** is a new syntax for writing asynchronous code in JavaScript.  
+
+React Native itself is not particularly opinionated about software architecture. It is a framework that facilitates the reusable component paradigm alongside guidelines for managing things like state and data sharing (props). At some point, Facebook described this as the V in MVC but have since moved away from that marketing to call it more abstractly A framework for building native apps with React.  
+
+In React Native, there are two main types of components that make up an application - functional components and class components. In high level, the javascript language is a functional language, not a OOD language, this makes React and React Native lean more towards to functional components. Functional components are simpler. They don’t manage their own state or have access to the lifecycle methods provided by React Native. They are literally plain old JavaScript functions. They are also known as stateless components. Code below is functional component in React Native.
+```javascript
+const PageOne = () => {
+  return (
+     <h1>Page One</h1>
+  );
+}
+```
+
