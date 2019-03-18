@@ -159,10 +159,11 @@ const PageOne = () => {
 }
 ```
 ## Github issues
-### 
+After reviewing the github issues, I find issue [#23886](https://github.com/facebook/react-native/issues/23886) (After upgrading to react-native 0.59 iOS build fails), this issue doesn't require an architecture change, it only needs to run `rm -rf node_modules && npm i` and it will work again.  
+Another issue is that [#23220](https://github.com/facebook/react-native/issues/23220), try to follow [these steps](https://medium.com/@adityasingh_32512/solved-unable-to-load-script-from-assets-index-android-bundle-bdc5e3a3d5ff) to slove this problem.
 
 ## Application of the system
 In order to demonstrate how to use React Native, I have upload a demo to show how React Native work.  
 Below is picture showing how React Native works.  
 
-<div align = center><img src = "https://github.com/ec500-software-engineering/case-study-xhyzzZ/blob/master/Demo.jpg" height="600" width="350"></div>
+<div align = center><img src = "https://github.com/ec500-software-engineering/case-study-xhyzzZ/blob/master/Demo.jpg" height="700" width="350"></div>
